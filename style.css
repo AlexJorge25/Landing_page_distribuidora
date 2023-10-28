@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:ital,wght@0,400;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    background-image:url(./img/plano_de_fundo_top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#0085FF;
+    width: 100vw;
+    height: 12vh;
+}
+header img {
+    width: 150px;
+    height: auto;
+}
+.lupa {
+    width: 40px;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #FFD316;
+    animation: pulseBorder 1s ease-out infinite;
+}
+
+@keyframes pulseBorder {
+    from{
+        outline: 0px solid #d4b52b;
+    }
+    to{
+        outline: 10px solid #f8cd0e62;
+    }
+}
+
+.navegacao {
+    display: flex;
+}
+.navegacao ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacao ul li {
+    margin: 0 9px;
+    
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.navegacao ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 230, 0);
+    transition: width 0.3s;
+}
+
+.navegacao ul li:hover::before {
+    width: 100%;
+}
+
+.navegacao ul li a {
+    color: white;
+}
+.landing-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.textos{
+    margin:90px 250px;
+}
+.textos h1{
+    font-size: 2em;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    color: white;
+
+}
+.textos span{
+    color: #FFD316;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario div{
+    margin-top: 10px;
+}
+.formulario label {
+    text-align: center;
+    color: rgba(247, 247, 247, 0.986);
+    font-family: 'Anton', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+.formulario input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    outline-color: #d4b52b;
+}
+.Mensagem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Mensagem_texto{
+    word-wrap: break-word;
+    width: 300px;
+    height: 100px;
+}
+.btn-first{
+    margin: 15px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffd519;
+    border: none;
+}
+.btn-first:hover{
+    animation: pulseBtn 1s ease-out infinite;
+}
+
+@keyframes pulseBtn {
+    from{
+        outline: 0px solid #f7d644;
+    }
+    to{
+        outline: 10px solid #ffd00050;
+    }
+}
+.imagem_fiorino img{
+    width: 70vw;
+    position: fixed;
+    bottom: -330px; 
+    right: -180px;
+    z-index: 1;
+}
+.circulo {
+    width: 600px; 
+    height: 600px; 
+    background-color: #003362;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -150px; 
+    right: -150px;
+    z-index: 0;
+}
+
