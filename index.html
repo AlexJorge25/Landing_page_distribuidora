@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/logotipo.png" type="image/x-icon">
-    <title>Document</title>
+    <title>AME&SUL</title>
 </head>
 <body>
     <header>
@@ -13,9 +13,9 @@
        <nav class="navegacao">
            <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">CONTATO</a></li>
                 <li><a href="#">LOGIN</a></li>
                 <li><a href="#">CADASTRAR</a></li>
+                <li><a href="#">CONTATO</a></li>
                 <li><a href="#">SOBRE NÓS</a></li>
            </ul>
            
@@ -25,7 +25,7 @@
     <section class="landing-page">
         <div class="textos">
             <h1><span>Entre em contato conosco</span><br>coloque seu nome e email</h1>
-            <form class="formulario">
+            <div class="formulario">
                 <div>
                     <label for="nome">Nome:</label>
                     <input type="text" placeholder="Nome">
@@ -39,7 +39,14 @@
                     <textarea class="Mensagem_texto"></textarea>
                 </div>
                 <button class="btn-first">Enviar</button>
-            </form>
+            </div>
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <p>Mensagem enviada com sucesso</p>
+                    <p>Obrigado ✅</p>
+                    <span class="close" onclick="fecharPopup()">X</span>
+                </div>
+            </div>
         </div>
         <div class="imagem_fiorino">
             <img src="./img/imagem van.png" alt="">
@@ -47,5 +54,6 @@
         </div>
 
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@
 }
 body {
     background-image:url(./img/plano_de_fundo_top.jpg);
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -33,6 +34,7 @@ header img {
     border-radius: 20px;
     background-color: #FFD316;
     animation: pulseBorder 1s ease-out infinite;
+    cursor: pointer;
 }
 
 @keyframes pulseBorder {
@@ -126,9 +128,11 @@ header img {
     flex-direction: column;
 }
 .Mensagem_texto{
+    border-radius: 20px;
     word-wrap: break-word;
     width: 300px;
     height: 100px;
+    padding: 10px;
 }
 .btn-first{
     margin: 15px auto;
@@ -150,11 +154,12 @@ header img {
     }
 }
 .imagem_fiorino img{
-    width: 70vw;
+    width: 58vw;
     position: fixed;
-    bottom: -330px; 
+    bottom: -270px; 
     right: -180px;
     z-index: 1;
+    border-radius: 100%;
 }
 .circulo {
     width: 600px; 
@@ -165,5 +170,43 @@ header img {
     bottom: -150px; 
     right: -150px;
     z-index: 0;
+}
+/*pop up*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.637);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.popup-content p{
+    margin-top:10px ;
+    font-family: 'Roboto', sans-serif;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    color: red;
+    font-family: monospace;
+    cursor: pointer;
 }
 
